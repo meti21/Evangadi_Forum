@@ -1,0 +1,144 @@
+
+.howtoContainer {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.howtoTitle {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #007bff;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.howtoTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background: #007bff;
+  border-radius: 2px;
+}
+
+.howtoSection {
+  margin-bottom: 35px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.howtoSection:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.2);
+}
+
+.howtoSection h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+  position: relative;
+  padding-left: 30px;
+}
+
+.howtoSection h2::before {
+  content: '🔍'; /* Placeholder icon, replace with real icon if desired */
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.howtoSection p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.howtoSection ol,
+.howtoSection ul {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.howtoSection ol li,
+.howtoSection ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #555;
+  position: relative;
+  padding-left: 15px;
+}
+
+.howtoSection ol li::before,
+.howtoSection ul li::before {
+  content: '•';
+  color: #007bff;
+  position: absolute;
+  left: -15px;
+  font-size: 18px;
+}
+
+.howtoSection ol li::marker,
+.howtoSection ul li::marker {
+  color: #007bff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .howtoContainer {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .howtoTitle {
+    font-size: 28px;
+  }
+
+  .howtoSection {
+    padding: 15px;
+  }
+
+  .howtoSection h2 {
+    font-size: 20px;
+  }
+
+  .howtoSection p,
+  .howtoSection ol li,
+  .howtoSection ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .howtoContainer {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .howtoTitle {
+    font-size: 24px;
+  }
+
+  .howtoSection h2 {
+    font-size: 18px;
+  }
+}

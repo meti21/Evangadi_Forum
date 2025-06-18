@@ -1,0 +1,144 @@
+
+.questionContainer {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #013334;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.stepsList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+  color: #3b455a;
+}
+
+.stepsList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.listIcon {
+  color: #526cf0;
+  margin-right: 0.6rem;
+  flex-shrink: 0;
+}
+
+.postQuestionForm {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.formTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #013334;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.questionTitleInput,
+.questionDetailsTextarea {
+  width: 100%;
+  border: 1.5px solid #498787;
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  color: #013334;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.questionTitleInput:focus,
+.questionDetailsTextarea:focus {
+  border-color: #526cf0;
+  outline: none;
+}
+
+.questionDetailsTextarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submitButton {
+  width: 100%;
+  background-color: #526cf0;
+  color: #013334;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #ff8502;
+  color: #e5f1f1;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.errorMessage {
+  color: #d9534f;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.successMessage {
+  color: #28a745;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.successBox {
+  border: 1px solid #d4edda;
+  background-color: #dff0d8;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  color: #155724;
+}
+
+.navigationOptions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.navButton {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}

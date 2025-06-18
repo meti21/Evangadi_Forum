@@ -1,0 +1,144 @@
+.questionsContainer {
+  width: 100%;
+}
+
+.questionsContainer hr {
+  border: 0;
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 0;
+}
+
+.askQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.askQuestion:hover {
+  background-color: #f7fafc;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.askUserInfo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.askUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.askUser a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.askUser a:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  color: #a0aec0;
+  transition: color 0.3s ease;
+}
+
+.askQuestion:hover .icon {
+  color: #718096;
+}
+
+.username {
+  font-size: 0.875rem;
+  color: #4a5568;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0.5rem;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.askQuestionText {
+  flex: 1;
+  min-width: 0;
+}
+
+.askQuestionText p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #2d3748;
+  margin: 0;
+  line-height: 1.4;
+  word-break: break-word;
+  transition: color 0.3s ease;
+}
+
+.askQuestion:hover .askQuestionText p {
+  color: #6c7ae0;
+}
+
+.askArrow {
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.askArrow a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.askArrow a:hover {
+  background-color: #edf2f7;
+  transform: scale(1.1);
+}
+
+.askArrow .icon {
+  color: #a0aec0;
+  transition: color 0.3s ease;
+}
+
+.askArrow a:hover .icon {
+  color: #6c7ae0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .askQuestion {
+    padding: 1.25rem 0;
+  }
+  .askUserInfo {
+    gap: 1rem;
+  }
+  .askUser {
+    min-width: 60px;
+  }
+  .icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .username {
+    font-size: 0.8rem;
+  }
+  .askQuestionText p {
+    font-size: 1rem;
+  }
+  .askArrow .icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

@@ -1,0 +1,204 @@
+
+.registerContainer {
+  max-width: 420px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  color: #446c6c;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.registerTitle {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #055a60;
+}
+
+.registerForm {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.formInput {
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.formInput input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #98a4a4;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  outline: none;
+  color: #898d8d;
+  background-color: #f7fbfb;
+  transition: border-color 0.3s ease;
+}
+
+.formInput input::placeholder {
+  color: #898d8d;
+}
+
+.formInput input:focus {
+  border-color: #055a60;
+  box-shadow: 0 0 5px #68bebf;
+}
+
+.fullName {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.fullName .formInput {
+  flex: 1;
+}
+
+.passwordInput {
+  position: relative;
+}
+
+.passwordInput input {
+  padding-right: 3rem;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #98a4a4;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  outline: none;
+  color: #898d8d;
+  background-color: #f7fbfb;
+  transition: border-color 0.3s ease;
+}
+
+.passwordInput input::placeholder {
+  color: #898d8d;
+}
+
+.passwordInput input:focus {
+  border-color: #055a60;
+  box-shadow: 0 0 5px #68bebf;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #898d8d;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registerButton {
+  background-color:  #FF8813;
+  color: #003333;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.registerButton:hover:not(:disabled) {
+  color: #e0f0f0;
+}
+
+.registerButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.link{
+  color: #FF8502;
+  text-decoration: none;
+}
+
+.link:hover{
+  color:#FF8502;
+}
+
+.errorMessage,
+.successMessage {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.errorMessage {
+  color: #f87171;
+}
+
+.successMessage {
+  color: #38b2ac;
+}
+
+.termsPrivacyLinks {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+}
+
+
+
+a {
+  color: #989CA4;
+}
+
+.spinner {
+  border: 2px solid #b2f5f6;
+  border-top: 2px solid #003333;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .registerContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .registerTitle {
+    font-size: 20px;
+  }
+
+  .registerButton {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .formInput input,
+  .passwordInput input {
+    padding: 10px;
+  }
+
+  .fullName {
+    flex-direction: column;
+  }
+}
